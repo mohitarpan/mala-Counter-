@@ -1,0 +1,118 @@
+/* Body Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f3f3; /* Background color for the entire screen */
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Styles */
+.container {
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #ffffff; /* Background color for the container */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Rest of your existing CSS code... */
+
+/* Timer Styles */
+#timer {
+  position: absolute;
+  top: 20px; /* Adjust the distance from the bottom as needed */
+  right: 250px; /* Adjust the distance from the right as needed */
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+  width: calc(100% - 40px); /* Adjust the width as needed */
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #4caf50;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background-color: #ccc;
+}
+
+#clickCount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4caf50;
+  margin-top: 20px;
+}
+
+#completedCounts {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.image-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lordKrishnaImage {
+  max-width: 100%;
+  max-height: 100%;
+  animation: fadeInOut 2s;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
